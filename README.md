@@ -4,7 +4,7 @@ This is Phoenix web application for representation of [Awesome Elixir](https://g
 
 ## Docker-compose installation
   * Check .env file, make sure all the env variables set:
-    * `My Awesome List` Web service env variables:
+    * My Awesome List Web service env variables:
       * MIX_ENV - MIX_ENV to use to build app at build of docker image;
       * SECRET_KEY_BASE - used to encrypt and sign session to db, could be generated with `mix phx.gen.secret`;
       * GITHUB_API_TOKEN - [Github API Token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
