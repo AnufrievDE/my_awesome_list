@@ -1,0 +1,25 @@
+<h1>Contents</h1>
+<ul>
+  <%= for category <- @categories do %>
+    <li><a class="category-link" href="#<%= anchor(category.name) %>"><%= category.name %></a></li>
+  <% end %>
+</ul>
+
+<%= for category <- @categories do %>
+  <section class="category-section">
+    <a name="<%= anchor(category.name) %>"></a>
+    <h2 class="category-h2"><%= category.name %></h2>
+    <div><%= category.description |> description() |> raw() %></div>
+    <ul>
+      <%= for lib <- category.libs do %>
+        <li class="category-li importance-<%= lib.importance %>">
+        <a href="<%= lib.url %>" target=_blank><%= lib.name %></a>
+          <%= if lib.api_url !== nil do %>
+            <img src="/images/star.png" height="22"><%= unknown?(lib.stargazers_count) %>
+            <img src="/images/calendar.png" height="22"><%= unknown?(lib.updated_days_ago) %>
+          <% end %> — <span class="library-description"><%= lib.description |> description() |> raw() %></span>
+        </li>
+      <% end %>
+    </ul>
+  </section>
+<% end %>

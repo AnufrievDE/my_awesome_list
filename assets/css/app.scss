@@ -1,0 +1,151 @@
+/* This file is for your main application css. */
+@import "./phoenix.css";
+
+.app_header nav ul li {
+  float: left;
+  margin-right: 2em;
+  img {
+    margin-left: 2%;
+    vertical-align: text-bottom;
+  }
+}
+
+.app_header nav ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.category-section {
+  margin-bottom: 2ex;
+}
+
+.category-h2 {
+  margin-bottom: 0.3ex;
+}
+
+.category-link {
+  font-weight: bold;
+}
+
+.category-li {
+  a {
+      text-decoration: underline;
+      font-weight: bold;
+      overflow: hidden;
+      background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 100%;
+      background-position: 100%;      
+      transition: background-position 275ms ease;
+  }
+  
+  a:hover {
+      background-position: 0 100%;
+  }
+
+  img {
+    margin-right: 0.5%;
+    vertical-align: text-bottom;
+  }
+
+  .library-description {
+      font-weight: bold;
+  }    
+}
+
+.importance-5 {
+  color: silver;
+  a {
+    color: dodgerblue;
+    font-weight: 200;
+    opacity: 0.6;
+  }
+  img {
+      opacity: 0.2;
+  }
+  .library-description {
+      font-weight: 100;
+  }
+}
+
+.importance-4 {
+  color: gray;
+  a {
+      color: dodgerblue;
+      font-weight: 300;
+      opacity: 0.7;
+  }
+  img {
+      opacity: 0.4;
+  }
+  .library-description {
+      font-weight: 200;
+  }
+}
+
+.importance-3 {
+  color: black;
+  opacity: 0.7;
+  a {
+      color: dodgerblue;
+      font-weight: 500;
+  }
+  .library-description {
+      font-weight: 500;
+  }
+}
+
+.importance-2 {
+  color: black;
+  opacity: 0.8;
+  a {
+      color: royalblue;
+      font-weight: 600;
+  }
+  .library-description {
+      font-weight: 600;
+  }
+}
+
+.importance-1 {
+  color: black;
+  a {
+      color: royalblue;
+      font-weight: 600;
+  }
+  .library-description {
+      font-weight: 700;
+  }
+}
+
+/* Alerts and form errors */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.alert p {
+  margin-bottom: 0;
+}
+.alert:empty {
+  display: none;
+}
