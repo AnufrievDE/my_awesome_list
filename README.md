@@ -15,7 +15,7 @@ This is Phoenix web application for representation of [Awesome Elixir](https://g
       * POSTGRES_DB
       * POSTGRES_USER
       * POSTGRES_PASSWORD
-  * Configure different `ports` in docker-compose.yaml if you would like
+  * Configure other `ports` in docker-compose.yaml if you would like
   * Build services `docker-compose build`
   * Start services with `docker-compose up`
 
